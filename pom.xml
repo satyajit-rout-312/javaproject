@@ -57,7 +57,7 @@
                 <artifactId>maven-deploy-plugin</artifactId>
                 <version>3.1.0</version>
                 <configuration>
-                    <altDeploymentRepository>nexus::default::http://13.53.60.128:8081/repository/maven-releases/</altDeploymentRepository> <!-- Release Repository URL -->
+                    <altDeploymentRepository>nexus::default::http://16.16.104.218:8081/repository/maven-releases/</altDeploymentRepository> <!-- Release Repository URL -->
                 </configuration>
             </plugin>
         </plugins>
@@ -67,7 +67,7 @@
     <distributionManagement>
         <repository>
             <id>nexus-releases</id> <!-- Change to 'nexus-releases' for release version -->
-            <url>http://13.53.60.128:8081/repository/maven-releases/</url> <!-- Nexus Release URL -->
+            <url>http://16.16.104.218:8081/repository/maven-releases/</url> <!-- Nexus Release URL -->
         </repository>
     </distributionManagement>
 
