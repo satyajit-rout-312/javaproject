@@ -1,9 +1,8 @@
-# Start from a base image
-FROM tomcat
+# Use an official OpenJDK runtime as a parent image
+FROM openjdk:17-jdk-slim
 
-# Set the working directory (optional)
-WORKDIR /usr/local/tomcat/webapps
+# Set the working directory in the container
+WORKDIR /app
 
-#copy war package from jenkins server
-  
-COPY target/*.war /usr/local/tomcat/webapps/ROOT.war
+# Copy the JAR file into the container at /app/app.jar
+COPY target/*.jar /app/app.jar
