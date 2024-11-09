@@ -63,7 +63,7 @@
     <!-- Repositories Configuration (for Nexus) -->
     <distributionManagement>
         <repository>
-            <id>nexus-releases</id> <!-- Change to 'nexus-releases' for release version -->
+            <id>maven-releases</id> <!-- Change to 'nexus-releases' for release version -->
             <url>http://16.16.104.218:8081/repository/maven-releases/</url> <!-- Nexus Release URL -->
         </repository>
     </distributionManagement>
